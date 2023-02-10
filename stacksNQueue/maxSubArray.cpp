@@ -5,7 +5,7 @@
 using namespace std;
 
 void maxSubArray(vector<int> &numbers, int k) {
-    deque<int> d(3);
+    deque<int> d(k);
 
     int i = 0;
     for (; i < 3; i++) {
