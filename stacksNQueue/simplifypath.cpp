@@ -33,6 +33,8 @@ string simplify(string path) {
         else stack.push_back(token);
     }
 
+    if (stack.size() < 2) return "/";
+
     ostringstream oss;
     int i = 0;
     for (string token: stack) {
